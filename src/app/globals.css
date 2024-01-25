@@ -2,32 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.box-shadow {
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.radius {
+  border-radius: 1.25rem;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+svg.svg_size-1 {
+  @apply w-6 h-6;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+svg.svg_size-2 {
+  @apply w-5 h-5;
+}
+
+svg.svg_size-3 {
+  @apply w-2.5 h-2.5;
+}
+
+svg.del {
+  @apply stroke-red-600;
+}
+
+.profile {
+  @apply bg-pink-400 text-white text-3xl;
+}
+
+.forms_container {
+  @apply flex-1 max-h-screen h-full overflow-y-auto;
+}
+.left-sec {
+  @apply px-14 py-10
+}
+.right-sec {
+  @apply px-10 py-8
+}
+
+.right-sec_wrapper {
+  @apply bg-[#1a1a1a] h-full
+}
+
+.flex-sec_wrapper {
+  @apply p-10 flex gap-3
+}
+.text-size {
+  @apply text-[0.8125rem]
 }

@@ -1,0 +1,34 @@
+
+
+.form_header-wrapper {
+  @apply flex items-center justify-between;
+}
+
+.gap3 {
+  @apply gap-3;
+}
+.gap5 {
+  @apply gap-5;
+}
+
+.title-icon_wrapper {
+  @apply flex items-center gap-1;
+}
+.dot {
+  @apply bg-[#5856d6] w-1.5 h-1.5 rounded-md;
+}
+.h-wrapper { 
+  @apply relative flex-1;
+}
+.title {
+  @apply border border-transparent p-1.5 text-xl font-semibold w-full;
+}
+.hover:hover {
+  @apply hover:border-[#e5e7eb];
+}
+.premium {
+  @apply text-[#5856d6] font-bold absolute left-2 -bottom-[0.54rem] italic;
+}
+.icons_wrapper {
+    @apply flex items-center gap-5
+}

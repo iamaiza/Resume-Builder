@@ -1,0 +1,39 @@
+.form_container {
+    @apply py-10 px-4 bg-white cursor-pointer
+}
+
+
+.pt2 {
+    @apply pt-2
+}
+.pl4 {
+    @apply pl-4
+}
+
+.py6 {
+    @apply py-6
+}
+
+.pt8 {
+    @apply pt-8
+}
+
+.text_xs {
+    @apply text-xs
+}
+
+
+
+
+.profile-photo {
+    @apply flex items-center gap-2.5 mt-3
+}
+
+.mt-half {
+    @apply mt-1.5
+}
+
+.profile-title_container {
+    @apply flex gap-4 h-full
+}
+
