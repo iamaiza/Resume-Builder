@@ -1,0 +1,19 @@
+.py6 {
+  @apply py-6;
+}
+.profile-title_container {
+  @apply flex gap-4 h-full;
+}
+.pt8 {
+  @apply pt-8;
+}
+.pt2 {
+  @apply pt-2;
+}
+.title_input {
+  @apply border block w-full px-1.5 py-1 text-xs outline-none mt-1;
+}
+
+.mt5 {
+  @apply mt-5;
+}

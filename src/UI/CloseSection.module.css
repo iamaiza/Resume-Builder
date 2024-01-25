@@ -1,0 +1,6 @@
+.close-section {
+    @apply p-2 rounded-[10px] flex justify-center w-full mt-7
+}
+.close-section:hover {
+    @apply bg-gray-100
+}
