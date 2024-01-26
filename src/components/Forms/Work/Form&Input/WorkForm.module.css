@@ -1,0 +1,14 @@
+.form_container {
+    @apply my-7 px-4 pt-2 pb-4 border bg-[#fafafa]
+}
+
+.icon-text_wrapper {
+    @apply flex items-center justify-between
+}
+.text_sm {
+    @apply text-sm
+}
+
+.icons_wrapper {
+    @apply flex items-center gap-3
+}

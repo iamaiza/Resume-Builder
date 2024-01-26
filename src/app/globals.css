@@ -21,7 +21,9 @@ svg.svg_size-2 {
 svg.svg_size-3 {
   @apply w-2.5 h-2.5;
 }
-
+svg.svg_size-4 {
+  @apply w-2 h-2 stroke-[#d8d8d8]
+}
 svg.del {
   @apply stroke-red-600;
 }
