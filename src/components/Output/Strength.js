@@ -6,7 +6,7 @@ const Strength = () => {
   const { options } = useContext(StrengthContext);
   return (
     <div
-      className={`pl-6 mt-3 ${!options || (options.length <= 0 && "hidden")}`}
+      className={`pl-6 ${!options || (options.length <= 0 && "hidden")}`}
     >
       <span className="h-style">Strengths</span>
       <div className={classes.options}>
