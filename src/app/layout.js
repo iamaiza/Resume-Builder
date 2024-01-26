@@ -4,6 +4,7 @@ import { PersonalStatesContextProvider } from "@/Context/PersonalContext";
 import { WorkContextProvider } from "@/Context/WorkContext";
 import { SkillsContextProvider } from "@/Context/SkillContext";
 import { StrengthContextProvider } from "@/Context/StrengthContext";
+import { ContextProvider } from "@/Context/Context";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,15 +16,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <PersonalStatesContextProvider>
-        <WorkContextProvider>
-          <SkillsContextProvider>
-            <StrengthContextProvider>
-              <body className={inter.className}>{children}</body>
-            </StrengthContextProvider>
-          </SkillsContextProvider>
-        </WorkContextProvider>
-      </PersonalStatesContextProvider>
+      <ContextProvider>
+        <PersonalStatesContextProvider>
+          <WorkContextProvider>
+            <SkillsContextProvider>
+              <StrengthContextProvider>
+                <body className={inter.className}>{children}</body>
+              </StrengthContextProvider>
+            </SkillsContextProvider>
+          </WorkContextProvider>
+        </PersonalStatesContextProvider>
+      </ContextProvider>
     </html>
   );
 }

@@ -2,10 +2,11 @@ import { ArrowIcon, DeleteIcon, HelpIcon, SkillsIcon, StarIcon, UserIcon, WorkBa
 import classes from "./FormHeader.module.css"
 
 const FormHeader = (props) => {
-    const { sectionIcon, sectionName, isPremium, arrow, help, del } = props;
+    const { sectionIcon, sectionName, isPremium, arrow, help, del, handleShowForm, isOpen } = props;
   return (
     <div
       className={`flex-items ${classes["form_header-wrapper"]} ${sectionIcon === "personal" ? classes.gap5 : classes.gap3}`}
+      onClick={handleShowForm}
     >
       <div className={`flex-items ${classes.heading}`}>
         {sectionIcon === "personal" && <UserIcon />}
@@ -19,7 +20,7 @@ const FormHeader = (props) => {
         )}
         <div className={classes["h-wrapper"]}>
           <h5
-            className={`${classes.title} ${classes.hover}`}
+            className={`${classes.title} ${isOpen && classes.hover}`}
           >
             {sectionName}
           </h5>
