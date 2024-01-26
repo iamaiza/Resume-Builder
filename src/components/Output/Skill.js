@@ -20,7 +20,7 @@ const Skills = () => {
 
   }, [categories])
   return (
-    <div className={`pl-6 ${isHidden ? "hidden" : "" }`}>
+    <div className={`mb-5 pl-6 ${isHidden ? "hidden" : "" }`}>
       <span className="h-style">Skills</span>
       {categories &&
         categories?.map((cate) => (
