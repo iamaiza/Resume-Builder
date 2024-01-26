@@ -1,0 +1,12 @@
+.form_wrapper {
+  @apply mt-7 px-4 pt-2 pb-4 border bg-[#fafafa];
+}
+/* .cate_name-wrapper {
+    @apply 
+} */
+.add_skills {
+  @apply justify-center w-full;
+}
+.add_skills button {
+  @apply w-2/3 py-1 px-2 text-[#ff5e59] border border-dashed border-[#ff5e59] rounded-xl hover:bg-[#F9EDED];
+}

@@ -1,0 +1,15 @@
+.title_span {
+    @apply text-xs text-[#808080] font-semibold
+}
+
+.cate-name_wrapper {
+    @apply gap-x-1 mt-3
+}
+
+.cate-name {
+    @apply text-[#d8d8d8] text-[7px] uppercase
+}
+
+.skills_wrapper {
+    @apply text-[10px] mt-1
+}
