@@ -1,7 +1,3 @@
-.title_span {
-    @apply text-xs text-[#808080] font-semibold
-}
-
 .cate-name_wrapper {
     @apply gap-x-1 mt-3
 }

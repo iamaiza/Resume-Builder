@@ -10,7 +10,7 @@ const Profile = () => {
     const desc = parseContent(profileDescription)
     return (
         <div className={`mb-6 ${profileDescription ? "block" : "hidden"}`}>
-        <span className={classes["profile-span"]}>Profile</span>
+        <span className="h-style">Profile</span>
         <div
           className={classes.desc}
           dangerouslySetInnerHTML={{ __html: desc }}

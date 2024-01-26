@@ -8,7 +8,7 @@ const Strength = () => {
     <div
       className={`pl-6 mt-3 ${!options || (options.length <= 0 && "hidden")}`}
     >
-      <span className={classes["title-span"]}>Strengths</span>
+      <span className="h-style">Strengths</span>
       <div className={classes.options}>
         {options &&
           options?.map((opt) => (

@@ -20,7 +20,7 @@ const Work = () => {
   const work_details = parseContent(workDetails);
   return (
     <div className="">
-      <span className={classes["title-span"]}>
+      <span className="h-style">
         Work Experience
       </span>
       <div className="flex-items">

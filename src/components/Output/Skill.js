@@ -9,7 +9,7 @@ const Skills = () => {
   const { categories } = useContext(SkillContext);
   return (
     <div className="pl-6">
-      <span className={classes.title_span}>Skills</span>
+      <span className="h-style">Skills</span>
       {categories &&
         categories?.map((cate) => (
           <>

@@ -38,3 +38,7 @@ svg.del {
 .flex-items {
   @apply flex items-center
 }
+
+.h-style {
+  @apply text-[11px] text-[#808080] font-semibold
+}

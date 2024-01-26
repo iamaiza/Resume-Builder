@@ -1,7 +1,3 @@
-.title-span {
-    @apply text-xs text-[#808080] font-semibold
-}
-
 .date_wrapper-1 {
     @apply items-center mr-1.5 gap-x-1
 }
