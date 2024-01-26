@@ -1,18 +1,21 @@
 
 
 .form_header-wrapper {
-  @apply flex items-center justify-between;
+  @apply justify-between;
 }
 
 .gap3 {
-  @apply gap-3;
+  @apply gap-x-3;
 }
 .gap5 {
-  @apply gap-5;
+  @apply gap-x-5;
+}
+.heading {
+  @apply gap-4 flex-1
 }
 
 .title-icon_wrapper {
-  @apply flex items-center gap-1;
+  @apply gap-1;
 }
 .dot {
   @apply bg-[#5856d6] w-1.5 h-1.5 rounded-md;
@@ -30,5 +33,5 @@
   @apply text-[#5856d6] font-bold absolute left-2 -bottom-[0.54rem] italic;
 }
 .icons_wrapper {
-    @apply flex items-center gap-5
+    @apply gap-5
 }

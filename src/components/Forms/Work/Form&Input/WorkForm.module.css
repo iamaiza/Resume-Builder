@@ -3,12 +3,12 @@
 }
 
 .icon-text_wrapper {
-    @apply flex items-center justify-between
+    @apply justify-between
 }
 .text_sm {
     @apply text-sm
 }
 
 .icons_wrapper {
-    @apply flex items-center gap-3
+    @apply gap-3
 }

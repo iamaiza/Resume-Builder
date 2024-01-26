@@ -5,14 +5,14 @@ const FormHeader = (props) => {
     const { sectionIcon, sectionName, isPremium, arrow, help, del } = props;
   return (
     <div
-      className={`${classes["form_header-wrapper"]} ${sectionIcon === "personal" ? classes.gap5 : classes.gap3}`}
+      className={`flex-items ${classes["form_header-wrapper"]} ${sectionIcon === "personal" ? classes.gap5 : classes.gap3}`}
     >
-      <div className="flex items-center gap-4 flex-1">
+      <div className={`flex-items ${classes.heading}`}>
         {sectionIcon === "personal" && <UserIcon />}
         {sectionIcon === "work" && <WorkBagIcon />}
         {sectionIcon === "skill" && <SkillsIcon />}
         {sectionIcon === "strengths" && (
-          <div className={classes["title-icon_wrapper"]}>
+          <div className={`flex-items ${classes["title-icon_wrapper"]}`}>
             <div className={classes.dot} />
             <StarIcon />
           </div>
@@ -30,7 +30,7 @@ const FormHeader = (props) => {
           )}
         </div>
       </div>
-      <div className={classes.icons_wrapper}>
+      <div className={`flex-items ${classes.icons_wrapper}`}>
         {arrow && <ArrowIcon />}
         {help && <HelpIcon />}
         {del && <DeleteIcon />}

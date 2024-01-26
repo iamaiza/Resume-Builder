@@ -30,7 +30,7 @@ const WorkInputs = () => {
   return (
     <div className="pt-6">
       <form>
-        <div className={classes.inputs_wrapper}>
+        <div className={`flex-items ${classes.inputs_wrapper}`}>
           <input
             className={classes.inputs}
             type="text"
@@ -46,7 +46,7 @@ const WorkInputs = () => {
             onChange={(e) => changeInputs("jobTitle", e.target.value)}
           />
         </div>
-        <div className={`pt-4 ${classes.inputs_wrapper}`}>
+        <div className={`pt-4 flex-items ${classes.inputs_wrapper}`}>
           <input
             className={classes.inputs}
             type="text"
@@ -63,7 +63,7 @@ const WorkInputs = () => {
           />
         </div>
         <div className={classes["inputs_wrapper-2"]}>
-          <div className={classes.date_wrapper}>
+          <div className={`flex-items ${classes.date_wrapper}`}>
             <input
               type="date"
               className={classes.inputs}

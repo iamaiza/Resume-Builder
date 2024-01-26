@@ -10,9 +10,9 @@ const WorkForm = () => {
   const { companyName } = useContext(WorkContext)
   return (
     <div className={classes.form_container}>
-      <div className={classes["icon-text_wrapper"]}>
+      <div className={`flex-items ${classes["icon-text_wrapper"]}`}>
         <span className={classes.text_sm}>{companyName ? companyName : "Work Experience #1"}</span>
-        <div className={classes.icons_wrapper}>
+        <div className={`flex-items ${classes.icons_wrapper}`}>
           <DeleteIcon />
           <button>
             <AngleIcon />
