@@ -1,0 +1,19 @@
+.inputs_wrapper {
+    @apply justify-between gap-3
+}
+
+.inputs_wrapper input {
+    @apply border text-sm flex-1 py-1.5 px-2 rounded placeholder:text-gray-500
+}
+
+.options {
+    @apply absolute top-11 max-w-[16rem] text-sm w-full p-3 max-h-64 h-full overflow-y-auto bg-white cursor-default
+}
+
+.option {
+    @apply bg-[#f2f0fe] py-1 px-2 mb-2
+}
+
+.inputs_wrapper button {
+    @apply border border-[#ff5e59] px-10 py-[0.27rem] rounded hover:bg-[#fdf2f2]
+}

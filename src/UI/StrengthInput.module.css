@@ -1,0 +1,19 @@
+.input-card {
+    @apply justify-center gap-4 py-2 px-3 rounded-xl hover:bg-white mb-2 
+}
+
+.input-card:hover {
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.show {
+    opacity: 0;
+}
+
+.input-card:hover .show {
+    opacity: 1;
+}
+
+.input-card input {
+    @apply flex-1 border text-sm py-1.5 px-2 placeholder:text-gray-500
+}

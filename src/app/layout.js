@@ -3,6 +3,7 @@ import "./globals.css";
 import { PersonalStatesContextProvider } from "@/Context/PersonalContext";
 import { WorkContextProvider } from "@/Context/WorkContext";
 import { SkillsContextProvider } from "@/Context/SkillContext";
+import { StrengthContextProvider } from "@/Context/StrengthContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +18,9 @@ export default function RootLayout({ children }) {
       <PersonalStatesContextProvider>
         <WorkContextProvider>
           <SkillsContextProvider>
-            <body className={inter.className}>{children}</body>
+            <StrengthContextProvider>
+              <body className={inter.className}>{children}</body>
+            </StrengthContextProvider>
           </SkillsContextProvider>
         </WorkContextProvider>
       </PersonalStatesContextProvider>
