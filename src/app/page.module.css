@@ -1,0 +1,15 @@
+.forms_container {
+  @apply flex-1 max-h-screen h-full overflow-y-auto;
+}
+.left-sec {
+  @apply px-14 py-10;
+}
+.right-sec {
+  @apply px-10 py-8;
+}
+.right-sec_wrapper {
+  @apply bg-[#1a1a1a] h-full;
+}
+.flex-sec_wrapper {
+  @apply p-10 flex gap-3;
+}

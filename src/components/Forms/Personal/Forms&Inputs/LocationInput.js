@@ -3,12 +3,11 @@
 import PersonalStatesContext from "@/Context/PersonalContext";
 import PersonalInput from "@/UI/PersonalInput";
 import { useContext } from "react";
-import classes from "./Location.module.css"
 
 const LocationInput = () => {
   const { street, city, postal, country, changeInputs } = useContext(PersonalStatesContext)
   return (
-    <div className={classes.mt10}>
+    <div className="mt-10">
       <PersonalInput
         label1="Street, number"
         label2="City"
@@ -18,7 +17,7 @@ const LocationInput = () => {
         value2={city}
         changeInputs={changeInputs}
       />
-      <div className={classes.pt2}>
+      <div className="pt-2">
         <PersonalInput
           label1="Postal"
           label2="Country"

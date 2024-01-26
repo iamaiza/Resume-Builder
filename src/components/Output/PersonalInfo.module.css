@@ -1,0 +1,23 @@
+.main_wrapper {
+    @apply justify-between p-10 bg-white text-black gap-3
+}
+
+.title_wrapper {
+    @apply text-xl font-bold
+}
+
+.info_wrapper {
+    @apply flex-wrap text-[9px] mt-4
+}
+
+.dob-national {
+    @apply  gap-1 mr-2
+}
+
+.location_wrapper {
+    @apply mr-2
+}
+
+.info {
+    @apply gap-1
+}

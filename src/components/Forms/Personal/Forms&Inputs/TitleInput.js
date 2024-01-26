@@ -8,8 +8,8 @@ import classes from './Title.module.css'
 const TitleInput = () => {
   const { firstName, lastName, titleAfter, titleBefore, phone, email, changeInputs } = useContext(PersonalStatesContext)
   return (
-    <div className={`${classes["title-input_container"]} ${classes.pl4}`}>
-      <form className={`${classes.pl4} ${classes["title-input_form"]}`}>
+    <div className="flex-1 pl-4">
+      <form className="pl-4 border-l">
         <PersonalInput
           label1="First Name"
           label2="Last Name"
@@ -30,7 +30,7 @@ const TitleInput = () => {
             changeInputs={changeInputs}
           />
         </div>
-        <div className={classes.pt2}>
+        <div className="pt-2">
           <label className="text-size" htmlFor="phone">
             Phone Number
           </label>
@@ -42,7 +42,7 @@ const TitleInput = () => {
             onChange={(e) => changeInputs("phone", e.target.value)}
           />
         </div>
-        <div className={classes.pt2}>
+        <div className="pt-2">
           <label className="text-size" htmlFor="email">
             Email Address
           </label>

@@ -1,0 +1,7 @@
+.profile-span {
+    @apply text-xs text-[#808080] font-semibold
+}
+
+.desc {
+    @apply text-[9px] text-[#d8d8d8] mt-2
+}

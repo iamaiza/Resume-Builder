@@ -1,17 +1,18 @@
 "use client"
 
 import PersonalStatesContext from "@/Context/PersonalContext";
-import { parseDescription } from "@/utils";
+import { parseContent } from "@/utils";
 import { useContext } from "react";
+import classes from "./Profile.module.css"
 
 const Profile = () => {
   const { profileDescription } = useContext(PersonalStatesContext)
-    const desc = parseDescription(profileDescription)
+    const desc = parseContent(profileDescription)
     return (
         <div className={`mb-6 ${profileDescription ? "block" : "hidden"}`}>
-        <span className={`text-xs text-[#808080] font-semibold`}>Profile</span>
+        <span className={classes["profile-span"]}>Profile</span>
         <div
-          className="text-[9px] text-[#d8d8d8] mt-2"
+          className={classes.desc}
           dangerouslySetInnerHTML={{ __html: desc }}
         />
       </div>

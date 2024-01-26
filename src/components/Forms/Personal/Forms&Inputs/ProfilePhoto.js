@@ -5,7 +5,7 @@ const ProfilePhoto = () => {
   return (
     <div>
       <UserProfilePhoto />
-      <div className={classes["profile-photo"]}>
+      <div className={`flex-items ${classes["profile-photo"]}`}>
         <input type="checkbox" />
         <span className={classes.text_xs}>Show picture</span>
       </div>
