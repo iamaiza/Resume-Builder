@@ -104,5 +104,14 @@ const EmailIcon = () => {
       </svg>
     );
   };
+
+  const CategoryIcon = () => {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13" className="svg_size-4">
+        <path d="M7 5.664H6v4.333h1V5.664zm-.5-2.775a.722.722 0 1 0 0 1.443.722.722 0 0 0 0-1.443z"></path>
+        <path d="M6.5 1C9.533 1 12 3.467 12 6.5S9.533 12 6.5 12 1 9.533 1 6.5 3.467 1 6.5 1m0-1a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13z"></path>
+      </svg>
+    );
+  };
   
-  export { EmailIcon, PhoneIcon, LocationIcon, FlagIcon, GlobeIcon, CalendarIcon };
+  export { EmailIcon, PhoneIcon, LocationIcon, FlagIcon, GlobeIcon, CalendarIcon, CategoryIcon };

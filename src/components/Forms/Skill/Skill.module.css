@@ -1,0 +1,9 @@
+.main_wrapper {
+  @apply py-10 px-4 bg-white mt-10;
+}
+.add_skills-cate {
+    @apply justify-center mt-4 mb-7 w-full
+}
+.add_skills-cate button {
+    @apply w-2/3 py-1.5 px-2 text-[#ff5e59] border border-dashed border-[#ff5e59] rounded-xl hover:bg-[#F9EDED]
+}

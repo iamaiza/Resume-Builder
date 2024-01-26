@@ -1,0 +1,18 @@
+.skill_input-wrapper {
+    @apply gap-4 mb-2 rounded-[10px] p-3 hover:bg-white
+}
+
+.skill_input-wrapper:hover {
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.show {
+    opacity: 0;
+}
+
+.skill_input-wrapper:hover .show {
+    opacity: 1;
+}
+
+.inputs {
+    @apply border text-sm block w-full px-1.5 py-1 mt-1 outline-none
+}

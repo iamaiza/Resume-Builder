@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { PersonalStatesContextProvider } from "@/Context/PersonalContext";
 import { WorkContextProvider } from "@/Context/WorkContext";
+import { SkillsContextProvider } from "@/Context/SkillContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +16,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <PersonalStatesContextProvider>
         <WorkContextProvider>
-          <body className={inter.className}>{children}</body>
+          <SkillsContextProvider>
+            <body className={inter.className}>{children}</body>
+          </SkillsContextProvider>
         </WorkContextProvider>
       </PersonalStatesContextProvider>
     </html>
