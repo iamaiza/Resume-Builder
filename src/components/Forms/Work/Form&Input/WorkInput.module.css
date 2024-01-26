@@ -1,5 +1,5 @@
 .inputs_wrapper {
-    @apply flex items-center gap-4 flex-col
+    @apply gap-4 flex-col
 }
 
 .inputs_wrapper-2 {
@@ -11,7 +11,7 @@
 }
 
 .date_wrapper {
-    @apply flex items-center gap-1 w-full
+    @apply gap-1 w-full
 }
 .checkbox_wrapper {
     @apply flex gap-2.5

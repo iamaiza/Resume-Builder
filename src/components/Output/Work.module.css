@@ -2,10 +2,6 @@
     @apply text-xs text-[#808080] font-semibold
 }
 
-.dates_wrapper {
-    @apply flex items-center
-}
-
 .date_wrapper-1 {
     @apply items-center mr-1.5 gap-x-1
 }
@@ -18,7 +14,7 @@
 }
 
 .check_wrapper {
-    @apply flex items-center gap-x-1 mt-2
+    @apply gap-x-1 mt-2
 }
 
 .title-input {

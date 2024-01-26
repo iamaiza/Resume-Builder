@@ -23,7 +23,7 @@ const Work = () => {
       <span className={classes["title-span"]}>
         Work Experience
       </span>
-      <div className={classes.dates_wrapper}>
+      <div className="flex-items">
         <div
           className={`${classes["date_wrapper-1"]} ${
             from || to ? "flex" : "hidden"
@@ -47,7 +47,7 @@ const Work = () => {
         </div>
       </div>
       {checked && !from && !to && (
-        <div className={classes.check_wrapper}>
+        <div className={`flex-items ${classes.check_wrapper}`}>
           <CalendarIcon />
           <span className={classes["date-span"]}>present</span>
         </div>
