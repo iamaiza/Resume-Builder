@@ -2,7 +2,6 @@
 
 import PersonalStatesContext from "@/Context/PersonalContext";
 import { useContext } from "react";
-import classes from "./Profile.module.css";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 
@@ -18,9 +17,9 @@ const modules = {
 const Profile = () => {
   const { profileDescription, changeInputs } = useContext(PersonalStatesContext)
   return (
-    <div className={classes["pt-2"]}>
+    <div className="pt-2">
       <span className="text-size">Profile</span>
-      <div className={classes["mt-half"]}>
+      <div className="mt-1.5">
         <ReactQuill
           theme="snow"
           modules={modules}

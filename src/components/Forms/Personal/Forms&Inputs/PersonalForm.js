@@ -14,12 +14,12 @@ const PersonalForm = () => {
     PersonalStatesContext
   );
   return (
-    <div className={classes["py-6"]}>
+    <div className="py-6">
       <div className={classes["profile-title_container"]}>
         <ProfilePhoto />
         <TitleInput />
       </div>
-      <div className={`${classes.mt5} ${classes["pt-8"]}`}>
+      <div className="mt-5">
         <PersonalInput
           label1="Date of birth"
           label2="Nationality"
@@ -31,7 +31,7 @@ const PersonalForm = () => {
         />
       </div>
       <LocationInput />
-      <div className={classes["pt-2"]}>
+      <div className="pt-2">
         <label className="text-size" htmlFor="web">
           Web
         </label>
