@@ -19,7 +19,7 @@ const descriptionAlignment = (wrapper) => {
   });
 };
 
-const parseDescription = (desc) => {
+const parseContent = (desc) => {
   const wrapper = document.createElement("div");
   wrapper.innerHTML = desc;
 
@@ -35,4 +35,4 @@ const parseDescription = (desc) => {
   return wrapper.innerHTML;
 };
 
-export { stripHtmlTags, parseDescription };
+export { stripHtmlTags, parseContent };

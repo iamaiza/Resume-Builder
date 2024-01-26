@@ -38,7 +38,7 @@ const EmailIcon = () => {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="svg_size-3"
+        className="svg_size-4"
       >
         <path
           strokeLinecap="round"
@@ -91,5 +91,18 @@ const EmailIcon = () => {
       </svg>
     );
   };
+
+  const CalendarIcon = () => {
+    return (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 13 11"
+        className="svg_size-4"
+      >
+        <path d="M0 1v10h13V1H0zm12 9H1V5h11v5zM1 4V2h11v2H1z"></path>
+        <path d="M3 0h1v3H3zm6 0h1v3H9z"></path>
+      </svg>
+    );
+  };
   
-  export { EmailIcon, PhoneIcon, LocationIcon, FlagIcon, GlobeIcon };
+  export { EmailIcon, PhoneIcon, LocationIcon, FlagIcon, GlobeIcon, CalendarIcon };

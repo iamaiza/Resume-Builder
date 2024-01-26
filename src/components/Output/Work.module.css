@@ -1,0 +1,30 @@
+.title-span {
+    @apply text-xs text-[#808080] font-semibold
+}
+
+.dates_wrapper {
+    @apply flex items-center
+}
+
+.date_wrapper-1 {
+    @apply items-center mr-1.5 gap-x-1
+}
+.date_wrapper-2 {
+    @apply items-center gap-x-1
+}
+
+.date-span {
+    @apply text-[8px] uppercase text-[#d8d8d8]
+}
+
+.check_wrapper {
+    @apply flex items-center gap-x-1 mt-2
+}
+
+.title-input {
+    @apply text-[11.5px] text-white font-semibold
+}
+
+.desc {
+    @apply text-[10px] text-[#d8d8d8] mt-2
+}
