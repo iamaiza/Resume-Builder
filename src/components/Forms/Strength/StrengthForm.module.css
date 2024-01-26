@@ -1,0 +1,7 @@
+.form_wrapper {
+    @apply my-7 p-4 border
+}
+
+.form_wrapper form {
+    @apply relative
+}

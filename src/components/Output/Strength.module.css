@@ -1,0 +1,11 @@
+.title-span {
+    @apply text-xs text-[#808080] font-semibold
+}
+
+.options {
+    @apply text-[8px] flex flex-wrap gap-1 mt-3
+}
+
+.option {
+    @apply bg-white py-0.5 px-1.5
+}
