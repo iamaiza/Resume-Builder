@@ -1,4 +1,5 @@
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
+import React from "react";
 import "./globals.css";
 import { PersonalStatesContextProvider } from "@/Context/PersonalContext";
 import { WorkContextProvider } from "@/Context/WorkContext";
@@ -6,7 +7,7 @@ import { SkillsContextProvider } from "@/Context/SkillContext";
 import { StrengthContextProvider } from "@/Context/StrengthContext";
 import { ContextProvider } from "@/Context/Context";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -21,7 +22,7 @@ export default function RootLayout({ children }) {
           <WorkContextProvider>
             <SkillsContextProvider>
               <StrengthContextProvider>
-                <body className={inter.className}>{children}</body>
+                <body>{children}</body>
               </StrengthContextProvider>
             </SkillsContextProvider>
           </WorkContextProvider>

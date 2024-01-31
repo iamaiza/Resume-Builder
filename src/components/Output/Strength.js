@@ -1,4 +1,6 @@
 "use client"
+
+import React from "react";
 import { useContext } from "react";
 import classes from "./Strength.module.css"
 import StrengthContext from "@/Context/StrengthContext";

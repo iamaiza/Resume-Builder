@@ -1,10 +1,11 @@
 "use client";
 
+import React from "react";
 import { useContext } from "react";
 import classes from "./WorkInput.module.css";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
-import WorkContext from "@/Context/WorkContext";
+import WorkContext from "../../../../Context/WorkContext";
 
 const modules = {
   toolbar: [
@@ -66,6 +67,7 @@ const WorkInputs = () => {
           <div className={`flex-items ${classes.date_wrapper}`}>
             <input
               type="date"
+              placeholder="From"
               className={classes.inputs}
               value={from}
               onChange={(e) => changeInputs("from", e.target.value)}
@@ -73,6 +75,7 @@ const WorkInputs = () => {
             -
             <input
               type="date"
+              placeholder="To"
               className={classes.inputs}
               value={to}
               onChange={(e) => changeInputs("to", e.target.value)}
@@ -91,6 +94,7 @@ const WorkInputs = () => {
           <span className="text-size">Profile</span>
           <div className="mt-1.5">
             <ReactQuill
+              id="work"
               className="text-lg"
               theme="snow"
               modules={modules}

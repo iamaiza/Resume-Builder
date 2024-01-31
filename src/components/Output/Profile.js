@@ -1,8 +1,9 @@
 "use client";
 
+import React from "react";
 import PersonalStatesContext from "@/Context/PersonalContext";
 import { parseContent } from "@/utils";
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import classes from "./Profile.module.css";
 
 const Profile = () => {

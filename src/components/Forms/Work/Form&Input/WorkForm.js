@@ -1,5 +1,6 @@
 "use client"
 
+import React from "react";
 import { AngleIcon, DeleteIcon } from "@/Icons/FormIcons";
 import classes from "./WorkForm.module.css"
 import WorkInputs from "./WorkInput";

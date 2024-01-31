@@ -1,11 +1,11 @@
 "use client";
-
-import PersonalInput from "@/UI/PersonalInput";
+import React from "react";
+import PersonalInput from "../../../../UI/PersonalInput";
 import LocationInput from "./LocationInput";
 import Profile from "./Profile";
 import TitleInput from "./TitleInput";
 import { useContext } from "react";
-import PersonalStatesContext from "@/Context/PersonalContext";
+import PersonalStatesContext from "../../../../Context/PersonalContext";
 import classes from "./PersonalForm.module.css";
 import ProfilePhoto from "./ProfilePhoto";
 

@@ -1,6 +1,7 @@
 "use client";
 
-import StrengthContext from "@/Context/StrengthContext";
+import React from "react";
+import StrengthContext from "../../../Context/StrengthContext";
 import { useContext, useState } from "react";
 import classes from "./Suggestion.module.css";
 
@@ -89,6 +90,7 @@ const Suggestions = () => {
     <div className={`flex-items ${classes.inputs_wrapper}`}>
       <>
         <input
+          data-testid="option"
           type="text"
           placeholder="Start typing to see suggestions"
           value={suggestion}

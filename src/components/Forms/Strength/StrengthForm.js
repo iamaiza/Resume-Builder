@@ -1,9 +1,10 @@
 "use client"
 
-import StrengthContext from "@/Context/StrengthContext";
+import React from "react";
+import StrengthContext from "../../../Context/StrengthContext";
 import { useContext } from "react";
 import classes from "./StrengthForm.module.css"
-import StrengthInput from "@/UI/StrengthInput";
+import StrengthInput from "../../../UI/StrengthInput";
 import Suggestions from "./Suggestions";
 
 const StrengthForm = () => {

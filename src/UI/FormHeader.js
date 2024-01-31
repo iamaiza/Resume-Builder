@@ -1,4 +1,5 @@
-import { ArrowIcon, DeleteIcon, HelpIcon, SkillsIcon, StarIcon, UserIcon, WorkBagIcon } from "@/Icons/FormIcons";
+import React from "react";
+import { ArrowIcon, DeleteIcon, HelpIcon, SkillsIcon, StarIcon, UserIcon, WorkBagIcon } from "../Icons/FormIcons";
 import classes from "./FormHeader.module.css"
 
 const FormHeader = (props) => {

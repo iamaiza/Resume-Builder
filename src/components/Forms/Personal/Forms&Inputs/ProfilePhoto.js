@@ -1,4 +1,5 @@
-import UserProfilePhoto from "@/UI/UserProfilePhoto";
+import React from "react";
+import UserProfilePhoto from "../../../../UI/UserProfilePhoto";
 import classes from "../Personal.module.css";
 
 const ProfilePhoto = () => {

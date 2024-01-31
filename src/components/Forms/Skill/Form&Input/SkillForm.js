@@ -1,9 +1,10 @@
 "use client";
 
-import SkillContext from "@/Context/SkillContext";
+import React from "react";
+import SkillContext from "../../../../Context/SkillContext";
 import { useContext, useState } from "react";
 import classes from "./SkillForm.module.css"
-import { AngleIcon, DeleteIcon } from "@/Icons/FormIcons";
+import { AngleIcon, DeleteIcon } from "../../../../Icons/FormIcons";
 import SkillInput from "./SkillInput";
 
 const SkillForm = (props) => {
@@ -11,19 +12,18 @@ const SkillForm = (props) => {
     const { addCategoryName, addSkills, changeInputs, deleteSkills } = useContext(SkillContext);
     const [categoryName, setCategoryName] = useState(cateName || "");
   
-    console.log(skills);
     const cateNameHandler = (value) => {
       setCategoryName(value);
       addCategoryName(id, value);
     };
   return (
-    <div className={classes.form_wrapper}>
+    <div className={classes.form_wrapper} data-testid="cate-form">
       <div className="flex-items justify-between">
         <span className="text-sm">
           {categoryName || `Skill Category #${id}`}
         </span>
         <div className="flex-items gap-3">
-          <div onClick={() => deleteCategory(id)}>
+          <div id="delete-cate" onClick={() => deleteCategory(id)}>
             <DeleteIcon />
           </div>
           <div>

@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import CloseSection from "@/UI/CloseSection";
 import classes from "./Work.module.css";
 import WorkForm from "./Form&Input/WorkForm";
@@ -33,12 +34,12 @@ const WorkExperience = () => {
         handleShowForm={showFormHandler}
         isOpen={isOpen}
       />
-      {isOpen && (
+      {/* {isOpen && ( */}
         <>
           <WorkForm />
           <CloseSection handleHideForm={hideFormHandler} />
         </>
-      )}
+      {/* )} */}
     </div>
   );
 };

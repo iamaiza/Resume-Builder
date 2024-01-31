@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import WorkContext from "@/Context/WorkContext";
 import { CalendarIcon, LocationIcon } from "@/Icons/OutputIcons";
 import { parseContent } from "@/utils";

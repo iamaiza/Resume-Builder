@@ -1,11 +1,12 @@
 "use client";
 
-import CloseSection from "@/UI/CloseSection";
-import FormHeader from "@/UI/FormHeader";
+import React from "react";
+import CloseSection from "../../../UI/CloseSection";
+import FormHeader from "../../../UI/FormHeader";
 import classes from "./Strength.module.css";
 import StrengthForm from "./StrengthForm";
 import { useContext, useEffect, useState } from "react";
-import Context from "@/Context/Context";
+import Context from "../../../Context/Context";
 
 const StrengthInfoForm = () => {
   const { showForm, handleShowForm } = useContext(Context);
@@ -34,12 +35,12 @@ const StrengthInfoForm = () => {
         handleShowForm={showFormHandler}
         isOpen={isOpen}
       />
-      {isOpen && (
+      {/* {isOpen && ( */}
         <>
           <StrengthForm />
           <CloseSection handleHideForm={hideFormHandler} />
         </>
-      )}
+      {/* )} */}
     </div>
   );
 };

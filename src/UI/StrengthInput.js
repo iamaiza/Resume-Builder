@@ -1,7 +1,7 @@
 "use client"
-import { useState } from "react";
+import React, { useState } from "react";
 import classes from "./StrengthInput.module.css"
-import { DeleteIcon, MenuIcon } from "@/Icons/FormIcons";
+import { DeleteIcon, MenuIcon } from "../Icons/FormIcons";
 
 const StrengthInput = (props) => {
   const { id, option, changeInput, deleteInputs } = props;
@@ -14,7 +14,7 @@ const StrengthInput = (props) => {
     <div
       className={`flex-items ${classes["input-card"]}`}
     >
-      <div className={classes.show} onClick={() => deleteInputs(id)}>
+      <div className={classes.show} data-testid="delete-option" onClick={() => deleteInputs(id)}>
         <DeleteIcon />
       </div>
 

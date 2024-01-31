@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import SkillContext from "@/Context/SkillContext";
 import { CategoryIcon } from "@/Icons/OutputIcons";
 import { useContext, useEffect, useState } from "react";

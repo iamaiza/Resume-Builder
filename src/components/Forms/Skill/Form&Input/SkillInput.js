@@ -1,6 +1,6 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import classes from "./SkillInput.module.css"
-import { BarIcon, DeleteIcon, MenuIcon } from "@/Icons/FormIcons";
+import { BarIcon, DeleteIcon, MenuIcon } from "../../../../Icons/FormIcons";
 
 const SkillInput = (props) => {
   const { name, level, cateId, changeInputs, skillId, deleteSkills } = props;
@@ -9,6 +9,7 @@ const SkillInput = (props) => {
   return (
     <div
       className={`flex-items ${classes["skill_input-wrapper"]}`}
+      data-testid="skill-form"
     >
       <div className="flex-1">
         <label className="text-size" htmlFor="skill-name">
@@ -49,7 +50,7 @@ const SkillInput = (props) => {
       <div className="pt-7">
         <BarIcon />
       </div>
-      <div className="pt-6" onClick={() => deleteSkills(cateId, skillId)}>
+      <div className="pt-6" data-testid="delete-skill" onClick={() => deleteSkills(cateId, skillId)}>
         <DeleteIcon />
       </div>
       <div className={`pt-7 ${classes.show}`}>

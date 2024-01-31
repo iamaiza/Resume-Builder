@@ -1,3 +1,4 @@
+import React from "react";
 import PersonalInfoForm from "@/components/Forms/Personal/PersonalInfoForm";
 import WorkExperience from "@/components/Forms/Work/WorkExperience";
 import PersonalInfo from "@/components/Output/PersonalInfo";
