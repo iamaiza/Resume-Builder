@@ -4,7 +4,7 @@ import React from "react";
 import WorkContext from "@/Context/WorkContext";
 import { CalendarIcon, LocationIcon } from "@/Icons/OutputIcons";
 import { parseContent } from "@/utils";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import classes from "./Work.module.css"
 
 const Work = () => {
@@ -18,9 +18,24 @@ const Work = () => {
     companyName,
     workDetails,
   } = useContext(WorkContext);
+  const [isHidden, setIsHidden] = useState(false)
+  useEffect(() => {
+    const hasValues = 
+      from ||
+      to ||
+      city ||
+      country ||
+      checked ||
+      jobTitle ||
+      companyName ||
+      workDetails
+
+      setIsHidden(!(hasValues))
+
+  }, [from, to, city, country, checked, jobTitle, companyName, workDetails])
   const work_details = parseContent(workDetails);
   return (
-    <div className="">
+    <div className={isHidden ? "hidden" : ""}>
       <span className="h-style">
         Work Experience
       </span>
