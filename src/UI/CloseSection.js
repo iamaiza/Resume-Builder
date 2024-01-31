@@ -1,4 +1,5 @@
-import { AngleIcon } from "@/Icons/FormIcons";
+import React from "react";
+import { AngleIcon } from "../Icons/FormIcons";
 import classes from "./CloseSection.module.css"
 
 const CloseSection = (props) => {

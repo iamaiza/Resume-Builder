@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import FormHeader from "@/UI/FormHeader";
 import PersonalForm from "./Forms&Inputs/PersonalForm";
 import classes from "./Personal.module.css";
@@ -31,12 +32,12 @@ const PersonalInfoForm = () => {
         handleShowForm={showFormHandler}
         isOpen={isOpen}
       />
-      {isOpen && (
+      {/* {isOpen && ( */}
         <>
           <PersonalForm />
           <CloseSection handleHideForm={hideFormHandler} />
         </>
-      )}
+      {/* )} */}
     </div>
   );
 };

@@ -1,3 +1,4 @@
+import React from "react";
 import classes from "./PersonalInput.module.css"
 
 const PersonalInput = (props) => {

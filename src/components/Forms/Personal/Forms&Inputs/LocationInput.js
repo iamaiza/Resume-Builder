@@ -1,7 +1,8 @@
 "use client"
 
-import PersonalStatesContext from "@/Context/PersonalContext";
-import PersonalInput from "@/UI/PersonalInput";
+import React from "react";
+import PersonalStatesContext from "../../../../Context/PersonalContext";
+import PersonalInput from "../../../../UI/PersonalInput";
 import { useContext } from "react";
 
 const LocationInput = () => {

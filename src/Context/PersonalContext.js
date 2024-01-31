@@ -1,6 +1,7 @@
 "use client";
 
-import { stripHtmlTags } from "@/utils";
+import React from "react";
+import { stripHtmlTags } from "../utils";
 
 
 const { createContext, useState } = require("react");
@@ -23,15 +24,15 @@ const context = {
   changeInputs: () => {},
 };
 
-const PersonalStatesContext = createContext(context);
+const PersonalStatesContext = createContext();
 
 const PersonalStatesContextProvider = ({ children }) => {
   const storedStateValues = JSON.parse(localStorage.getItem("personalState"));
   const [firstName, setFirstName] = useState(
-    storedStateValues?.firstName || "Jane"
+    storedStateValues?.firstName || ""
   );
   const [lastName, setLastName] = useState(
-    storedStateValues?.lastName || "Doe"
+    storedStateValues?.lastName || ""
   );
   const [titleBefore, setTitleBefore] = useState(
     storedStateValues?.titleBefore || ""
@@ -41,7 +42,7 @@ const PersonalStatesContextProvider = ({ children }) => {
   );
   const [phone, setPhone] = useState(storedStateValues?.phone || "");
   const [email, setEmail] = useState(
-    storedStateValues?.email || "janeDoe22@gmail.com"
+    storedStateValues?.email || ""
   );
   const [dob, setDob] = useState(storedStateValues?.dob || "");
   const [nationality, setNationality] = useState(

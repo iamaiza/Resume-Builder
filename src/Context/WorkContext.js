@@ -1,20 +1,10 @@
 "use client";
 
-import { stripHtmlTags } from "@/utils";
+import React from "react";
+import { stripHtmlTags } from "../utils";
 import { createContext, useState } from "react";
 
-const context = {
-  companyName: "",
-  jobTitle: "",
-  city: "",
-  country: "",
-  from: "",
-  to: "",
-  checked: false,
-  workDetails: "",
-  changeInputs: () => {},
-};
-const WorkContext = createContext(context);
+const WorkContext = createContext();
 
 const WorkContextProvider = ({ children }) => {
   const storedStates = JSON.parse(localStorage.getItem("workStates"));

@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import PersonalStatesContext from "@/Context/PersonalContext";
 import { parseContent } from "@/utils";
 import { useContext } from "react";

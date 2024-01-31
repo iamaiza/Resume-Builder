@@ -1,12 +1,13 @@
 "use client";
 
-import SkillContext from "@/Context/SkillContext";
-import CloseSection from "@/UI/CloseSection";
-import FormHeader from "@/UI/FormHeader";
+import React from "react";
+import SkillContext from "../../../Context/SkillContext";
+import CloseSection from "../../../UI/CloseSection";
+import FormHeader from "../../../UI/FormHeader";
 import { useContext, useEffect, useState } from "react";
 import classes from "./Skill.module.css";
 import SkillForm from "./Form&Input/SkillForm";
-import Context from "@/Context/Context";
+import Context from "../../../Context/Context";
 
 const SkillInfoForm = () => {
   const { categories, addCategories, deleteCategory } =
@@ -36,7 +37,7 @@ const SkillInfoForm = () => {
         handleShowForm={showFormHandler}
         isOpen={isOpen}
       />
-      {isOpen && (
+      {/* {isOpen && ( */}
         <>
           {categories &&
             categories.map((category) => (
@@ -56,7 +57,7 @@ const SkillInfoForm = () => {
 
           <CloseSection handleHideForm={hideFormHandler} />
         </>
-      )}
+      {/* )} */}
     </div>
   );
 };

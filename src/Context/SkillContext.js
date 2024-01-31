@@ -1,16 +1,9 @@
 "use client";
 
+import React from "react";
 const { createContext, useState } = require("react");
 
-const SkillContext = createContext({
-  categories: [],
-  addCategories: () => {},
-  deleteCategory: () => {},
-  addCategoryName: () => {},
-  addSkills: () => {},
-  changeInputs: () => {},
-  deleteSkills: () => {},
-});
+const SkillContext = createContext();
 
 const SkillsContextProvider = ({ children }) => {
   const storedStates = JSON.parse(localStorage.getItem("skillStates")) || {
